@@ -1,0 +1,45 @@
+/* Previous styles remain, adding/updating these: */
+.search-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+#searchBtn {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-save {
+    flex: 2;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-add {
+    flex: 1;
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-save:hover { background: #218838; }
+.btn-add:hover { background: #5a6268; }

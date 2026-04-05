@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>📦 Inventory List</h2>
+        
+        <label for="searchBar">Quick Search:</label>
+        <div class="search-group">
+            <input type="text" id="searchBar" placeholder="Search or enter new model...">
+            <button type="button" id="searchBtn">Search</button>
+        </div>
+
+        <form id="inventoryForm">
+            <label for="product-name">Select SPL Model:</label>
+            <select id="product-name" size="5">
+                <option value="SPL70">SPL70 - Medium-Duty</option>
+                <option value="SPL100">SPL100 - Medium Duty</option>
+                <option value="SPL140">SPL140 - Medium-Duty</option>
+                <option value="SPL170">SPL170 - Linehaul/Vocational</option>
+                <option value="SPL250">SPL250 - Linehaul/Vocational</option>
+                <option value="SPL350">SPL350 - Heavy-Haul</option>
+                <option value="SPL350HD">SPL350 HD - Heavy-Haul</option>
+            </select>
+
+            <label for="quantity">Current Quantity:</label>
+            <input type="number" id="quantity" value="0" min="0">
+
+            <label for="status">Stock Status:</label>
+            <input type="text" id="status" readonly>
+
+            <div id="timestamp" class="time-stamp">Last updated: Never</div>
+
+            <div class="button-group">
+                <button type="button" id="updateBtn" class="btn-save">Save Changes</button>
+                <button type="button" id="addNewBtn" class="btn-add">Add as New Item</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
